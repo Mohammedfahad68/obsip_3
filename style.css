@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgb(0, 19, 54)
+
+}
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+#new-task-form{
+    display: flex;
+}
+#new-task-input {
+    flex: 1;
+    margin-right: 10px;
+}
+input,button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+#new-task-form{
+    background-color: rgba(133, 189, 238, 0.297);
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2); 
+    border-radius: 8px;
+
+} 
+#new-task-form::placeholder{
+    color: blue;
+}
+#new-task-submit{
+    color: rgb(255, 152, 255);
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+
+    
+}
+#new-task-submit:hover{
+    color:aqua;
+}
+main{
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.task-list{
+    padding: 1rem;
+}
+.task-list h2{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+#tasks .task{
+    flex: 1 1 0%;
+    background-color: rgba(133, 189, 238, 0.297);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 2px;
+    margin-left: 3px;
+    color: rgba(255, 255, 255, 0.396);
+    font-size: 1.50rem;
+    
+}
+#tasks .task .content .text{
+    color: white;
+    font-size: 1.25rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+#tasks .task .content .text:not(:read-only){
+    color: rgb(0, 0, 0);
+}
+#tasks .task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+.actions button{
+    cursor: pointer;
+    margin: 0 0.1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.actions button:hover{
+    color: cyan;
+
+}
+.actions button:active{
+    opacity: 0.6;
+}
+.actions .delete{
+    color: red;
+    font-size: 20px;
+    padding-top: 5px;
+    
+}
+.actions .edit{
+    color: greenyellow;
+    font-size: 20px;
+    padding-top: 5px;
+    
+}
+#new-task-input {
+    font-size: 30px; 
+    width: 300px;   
+}
+.task {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2); 
+    border-radius: 8px;
+}
+.task .content[contenteditable]:focus {
+    outline: none;
+}
+
+
+
+
